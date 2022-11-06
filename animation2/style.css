@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(136, 100, 0);
+}
+.jordan{
+    z-index: 1;
+    position: absolute;
+    width: 600px;
+    bottom:0;
+    right: -150px;
+
+}
+.ball{
+    z-index: 2;
+    position: absolute;
+    width: 150px;
+    bottom: 20%;
+    right: 5%;
+    animation: shot 4s linear 1;
+}
+.basket{
+    z-index: 3;
+    position: absolute;
+    width: 300px;
+    transform: rotateY(180deg);
+    top: 200px;
+    left: -30px;
+}
+@keyframes shot{
+    0%{
+        bottom:20%;
+        right: 5%;
+
+    }
+    40%{
+        right: 70%;
+        bottom: 90%;
+
+    }
+    50%{
+        bottom: 70%;
+        right: 90%;
+
+    }
+    52%{
+        bottom: 70%;
+        right: 88%;
+    }
+    54%{
+        bottom: 65%;
+        right: 90%;
+    }
+    56%{
+        bottom: 65%;
+        right: 88%;
+    }
+    58%{
+        bottom: 65%;
+        right: 90%;
+    }
+    60%{
+        bottom: 65%;
+        right: 88%;
+    }
+    70%{
+        bottom: 0;
+        right: 88%;
+    }
+    80%{
+        bottom: 40%;
+        right: 88%;
+    }
+    90%{
+        bottom:0%;
+        right: 88%; 
+
+    }
+    95%{
+        bottom:10%;
+        right: 88%;
+    }
+    100%{
+        bottom:0;
+        right: 88%;
+    }
+}
